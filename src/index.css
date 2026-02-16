@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%, #22223b);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.main{
+    background-color: gray;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.nav{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32, 31, 31);
+    padding: 10px;
+}
+
+.buttonbox{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+.buttons{
+    padding: 2px;
+    border: rgb(84, 80, 80) solid 1px;
+}
+.active{
+    border: #000 solid 2px;
+}
+.card{
+    width: 60%;
+    height: 10%;
+    border-radius: 50%;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    padding: 20px;
+    gap: 10px;
+}
+.cardTitle{
+    font: bold;
+    font-weight: bold;
+}
